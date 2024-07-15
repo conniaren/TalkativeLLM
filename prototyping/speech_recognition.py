@@ -72,6 +72,10 @@ def stream_audio():
             print(f"Error feeding audio content: {e}")
             break
         start = end
+
+
+
+        
     
    #try:
         #final_result = stream_model.finishStream()
