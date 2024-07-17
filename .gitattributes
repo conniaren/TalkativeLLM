@@ -37,3 +37,4 @@ saved_model/**/* filter=lfs diff=lfs merge=lfs -text
 recordout.wav filter=lfs diff=lfs merge=lfs -text
 test.wav filter=lfs diff=lfs merge=lfs -text
 record_out.wav filter=lfs diff=lfs merge=lfs -text
+Llama-3-Instruct-8B-SPPO-Iter3-IQ4_XS.gguf filter=lfs diff=lfs merge=lfs -text

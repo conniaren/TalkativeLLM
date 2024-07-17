@@ -13,7 +13,7 @@ class recordSTT():
     FORMAT = pyaudio.paInt16
     CHANNELS = 1
     RATE = 16000
-    RECORD_SECS = 5
+    RECORD_SECS = 15
     SAMPLE_SIZE = 2
 
     def __init__(self) -> None:
@@ -73,7 +73,7 @@ class recordSTT():
         while True:
             if keyboard.is_pressed('enter'):
                 self.is_recording = False
-                print(" Voice Captured. \n")
+                print("~~~~~~~~ Voice Captured. ~~~~~~~~\n")
                 break
 
         record.join()

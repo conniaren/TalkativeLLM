@@ -26,8 +26,8 @@ def main():
                 is_running = False
                 print("Escape key pressed. Exiting the program.")
                 time.sleep(0.1)
-                break         
-        sys.exit()
+                sys.exit()       
+        
 
     while True:
         if keyboard.is_pressed('enter'):
@@ -56,8 +56,13 @@ def main():
             print("Press enter to speak again. Or press ESC to exit the program. \n")
             escape_thread = Thread(target=check_escape)
             escape_thread.start()
+           
             while keyboard.is_pressed('enter'):
                 pass
+        
+        if not is_running:
+                sys.exit()
+
 
 if __name__ == '__main__':
     main()
